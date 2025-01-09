@@ -1,4 +1,4 @@
-export default {
+const config = {
   async rewrites() {
     return [
       {
@@ -8,3 +8,5 @@ export default {
     ];
   },
 };
+
+export default config;
