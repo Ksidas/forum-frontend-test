@@ -14,5 +14,6 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const useAuth = () => useContext(AuthContext);

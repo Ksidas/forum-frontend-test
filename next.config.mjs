@@ -1,6 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+export default {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://localhost:5000/api/:path*", // Backend API URL
+      },
+    ];
+  },
 };
-
-export default nextConfig;

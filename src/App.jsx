@@ -5,6 +5,7 @@ import Navbar from "./components/Layout/Navbar";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import QuestionsList from "./components/QuestionsList";
 
 const App = () => (
   <AuthProvider>
@@ -18,5 +19,6 @@ const App = () => (
     </Router>
   </AuthProvider>
 );
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default App;
